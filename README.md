@@ -17,7 +17,8 @@ See ```man network_namespaces``` and ```man ip-netns``` for more information.
 4. If you have a passwordless set up you might want to ensure no one else can read your password file or configs.  ```man chmod```
 5. Set up a per VPN resolv.conf  
     5.1. ```sudo mkdir -p /etc/netns/PROVIDER```  
-    5.2. ```cp PROVIDER_resolv.conf /etc/netns/PROVIDER/resolv.conf```  
+    5.2. ```cp PROVIDER_resolv.conf /etc/netns/PROVIDER/resolv.conf```
+6. ```chmod 755 ~/vpn/vpn.sh ~/vpn/netns-script```
 
 ## Exec a command
 ```~/vpn/vpn.sh exec PROVIDER:us1234.ovpn bash```
